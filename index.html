@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestion listes de sports</title>
+    <link rel="stylesheet" href="./sports.css">
+    <script src ="./sports.js"></script>
 </head>
 <body>
-    
+    <h1>Gestion de deux listes de sports</h1>
+    <div class="container">
+        <div class="enable">
+            <select size ="10" multiple>
+                <option>Football</option>
+                <option>Basketball</option>
+                <option>Rugby</option>
+                <option>Hockey</option>
+                <option>Volley</option>
+                <option>Cyclisme</option>
+                <option>Judo</option>
+                <option>Boxe</option>
+                <option>Tennis</option>
+                <option>Natation</option>
+            </select>
+        </div>
+        <div class="action">
+            <button class="btn" onclick="deplacerR()">&#12297;</button>
+            <button class="btn" onclick="deplacerAllR()">&#12297;&#12297;</button>
+            <button class="btn" onclick="deplacerSelectR()">&#12297;&#12297;*</button>
+            <button class="btn" onclick="deplacerL()">&#x3008;</button>
+            <button class="btn" onclick="deplacerAllL()">&#x3008;&#x3008;</button>
+            <button class="btn" onclick="deplacerSelectL()">&#x3008;&#x3008;*</button>
+        </div>
+        <div class="favorite">
+            <select size ="10" multiple>
+                
+            </select>
+        </div>
+    </div>
+
 </body>
 </html>
