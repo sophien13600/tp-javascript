@@ -7,6 +7,11 @@ body{
     display: flex;
     gap:5px;
 }
+.enable, .favorite{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 select{
     height: 21em;
     width: 15em;
@@ -19,11 +24,13 @@ select:focus {
   background: #eaebf0;
 }
 .action{
+    height: 21em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:5px;
+    gap: 5px;
 }
+
 .btn{
     padding:4px;
 }

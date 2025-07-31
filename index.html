@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion listes de sports</title>
     <link rel="stylesheet" href="./sports.css">
-    <script src ="./sports.js"></script>
+    <script src ="./sports.js" defer></script>
 </head>
 <body>
     <h1>Gestion de deux listes de sports</h1>
     <div class="container">
         <div class="enable">
-            <select size ="10" multiple>
-                <option>Football</option>
-                <option>Basketball</option>
-                <option>Rugby</option>
-                <option>Hockey</option>
-                <option>Volley</option>
-                <option>Cyclisme</option>
-                <option>Judo</option>
-                <option>Boxe</option>
-                <option>Tennis</option>
-                <option>Natation</option>
+            <label for="sports">Liste des sports disponibles:</label>
+            <select id="sports" size ="10" multiple>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="rugby">Rugby</option>
+                <option value="hockey">Hockey</option>
+                <option value="volley">Volley</option>
+                <option value="cyclisme">Cyclisme</option>
+                <option value="judo">Judo</option>
+                <option value="boxe">Boxe</option>
+                <option value="tennis">Tennis</option>
+                <option value="natation">Natation</option>
             </select>
         </div>
         <div class="action">
@@ -33,7 +34,8 @@
             <button class="btn" onclick="deplacerSelectL()">&#x3008;&#x3008;*</button>
         </div>
         <div class="favorite">
-            <select size ="10" multiple>
+            <label for="favorite-sports">Vos sports favoris:</label>
+            <select id="favorite-sports"  multiple>
                 
             </select>
         </div>
