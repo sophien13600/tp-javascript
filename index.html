@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Equation du second degrès</title>
+    <link rel="stylesheet" href="./equation.css">
+    <script src ="./equation.js" defer></script>
 </head>
 <body>
-    
+    <h1>Equation du Second degré</h1>
+    <div class ="container">
+        <div class ="equation">
+            <div>
+                <label for="a"></label>
+                 <input type="number" id="a">
+            </div>
+            <div>
+                  <p>X²</p>
+             </div>
+        </div>
+        <div class ="equation">
+            <div>          
+                <label for="b"></label>
+               <input type="number" id="b">
+            </div>
+            <div>
+                <p>+ X</p>
+            </div> 
+        </div>
+        <div class="equation">
+            <div>
+                <label for="c"></label>
+                <input type="number" id="c">
+            </div>
+            <div>
+                <p>=0</p>
+            </div>
+        </div>    
+    </div>
+        <div class="button">
+            <button onclick="resoudre()">Calculer les solutions</button>
+        </div>
+        <div id ="display">
+            <h2>Resultats</h2>
+        
+        </div>
 </body>
 </html>

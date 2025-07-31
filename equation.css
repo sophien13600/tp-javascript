@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+        border-radius: 6px;
+    padding: 5px;
+}
+.equation{
+    gap: 10px;
+     display: flex;
+     align-items: center;
+
+}
+.container{
+    display:flex;    
+    width: 40vw;
+    justify-content: space-between;
+    background-color: #abcfef;
+    padding: 25px;
+    border-radius: 8px;
+}
+.button{
+        display: flex;
+    width: 40vw;
+    justify-content: flex-end;
+    margin-top:15px
+}
+button{
+        font-size: 17px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    background-color: #66a3f0;
+}
+#display{
+    width:40vw;
+}
