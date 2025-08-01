@@ -2,47 +2,44 @@ const favori= document.getElementById('favorite-sports')
 const sport = document.getElementById('sports');
 
 function deplacerR(){
-    //console.log(sport.selectedOptions);
     const option =sport.children[sport.selectedIndex]
-   // console.log(option);
-        favori.appendChild(option)
-        favori.selectedIndex = -1;
-        sport.selectedIndex = -1
+    favori.appendChild(option)
+    favori.selectedIndex = -1;
+    sport.selectedIndex = -1
     }
-    function deplacerL(){
-       // console.log(favori.selectedOptions);
-       const optionF = favori.children[favori.selectedIndex]
-       sport.appendChild(optionF)
-        favori.selectedIndex = -1;
-        sport.selectedIndex = -1
+function deplacerL(){
+    const optionF = favori.children[favori.selectedIndex]
+    sport.appendChild(optionF)
+    favori.selectedIndex = -1;
+    sport.selectedIndex = -1
         }
-    function deplacerAllR(){
-  
-        
+function deplacerAllR(){
       for (let i =sport.length-1; i>=0; i--){
             const options = sport.children
             console.log(options[i]);
             favori.appendChild(options[i]);
             }
     }
-   function deplacerAllL(){
+function deplacerAllL(){
       for (let i =favori.length-1; i>=0; i--){
             const options = favori.children
             console.log(options[i]);
             sport.appendChild(options[i]);
             }
-    }
-    function deplacerSelectR(){
+}
+function deplacerSelectR(){
     let options = sport.options
-    for (let i = options.length - 1; i >= 0; i--) {
-        if (options[i].selected) {
+        for (let i = options.length - 1; i >= 0; i--) {
+            if (options[i].selected) {
             favori.appendChild(options[i]);
-    }
-    }}
-  function deplacerSelectL(){
+            }
+        } 
+}
+function deplacerSelectL(){
     let options = favori.options
-    for (let i = options.length - 1; i >= 0; i--) {
-        if (options[i].selected) {
+        for (let i = options.length - 1; i >= 0; i--) {
+            if (options[i].selected) {
             sport.appendChild(options[i]);
-    }
-    }}
+            }
+        }
+}
